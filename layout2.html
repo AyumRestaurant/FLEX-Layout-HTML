@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header, nav, footer {
+        background-color: rgb(138, 252, 8);
+        margin: 10px;
+        text-align: center;
+        border: 2px solid rgb(10, 181, 233);
+    }
+
+    nav {
+        background-color: rgb(138, 252, 8);
+        border: 2px solid rgb(10, 181, 233);
+        margin: 10px;
+    }
+
+    main {
+        display: flex;
+        flex: 1;
+        margin: 10px;
+    }
+
+    section {
+        border: 2px solid rgb(10, 181, 233);
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    footer {
+        border: 2px solid rgb(10, 181, 233);
+        margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      section {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <h1>
+            Header
+        </h1>
+  </header>
+  <nav>
+        <h1>
+            Navigation Menu
+        </h1>
+  </nav>
+  <main>
+    <section>
+        <h1>
+            Content A
+        </h1>
+    </section>
+    <section>
+        <h1>
+            Content B
+        </h1>
+    </section>
+  </main>
+  <footer>
+    <h1>
+        Footer
+    </h1>
+  </footer>
+</body>
+</html>
+   
+
+
+   <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout 2</title>
+        <style>
+            body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            }
+
+            header,
+            nav,
+            .container,
+            footer {
+                display: flex;
+                align-items: center;
+                border: 2px solid rgb(10, 181, 233);
+                padding: 10px;
+                background-color: rgb(138, 252, 8);
+                margin: 10px;
+                text-align: center;
+            
+            }
+
+            nav {
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+            }
+
+            .container {
+                flex-grow: 1;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                background-color: #fff;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .wew1 {
+                justify-content: space-between;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                float: left;
+            }
+
+            .wew2 {
+                justify-content: space-between;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                float: right;
+            }
+
+            /* Use flexbox to separate Content A and Content B */
+            .container {
+                justify-content: space-around; /* Adjust the value as needed */
+            }
+        </style>
+    </head>
+    <body>
+            <header>
+                <h1>Header</h1>
+            </header>
+    
+            <nav>
+                <h1>Navigation</h1>
+            </nav>
+    
+            <div class="container">
+            <main class="wew1">
+                <h1>Content A</h1>
+            </main>
+    
+            <main class="wew1">
+                <h1>Content B</h1>
+            </main>
+        </div>
+    
+            <footer>
+                <h1>Footer</h1>
+            </footer>
+    </body>
+    </html> -->

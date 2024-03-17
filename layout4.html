@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 4</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header, nav, footer {
+        background-color: rgb(138, 252, 8);
+        margin: 10px;
+        text-align: center;
+        border: 2px solid rgb(10, 181, 233);
+    }
+
+    nav {
+        background-color: rgb(138, 252, 8);
+        border: 2px solid rgb(10, 181, 233);
+        margin: 10px;
+    }
+
+    main {
+        display: flex;
+        height: inherit;
+        flex: 1;
+        margin: 10px;
+    }
+
+    .maincontent{
+        display: flex;
+        flex: 5;
+        justify-content: center;
+        text-align: center;
+     
+    }
+
+    section {
+        border: 2px solid rgb(10, 181, 233);
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1;
+        
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        flex: 2;
+        
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        flex: 3;
+       
+      
+    }
+
+    footer {
+        border: 2px solid rgb(10, 181, 233);
+        margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      section {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <h1>
+            Header
+        </h1>
+  </header>
+  <nav>
+        <h1>
+            Navigation Menu
+        </h1>
+  </nav>
+  <main>
+    <section class="maincontent">
+        <h1>
+            Main Content
+        </h1>
+    </section>
+
+    <!-- <div class="container">
+    <div class="left">
+        <h1>Picture</h1>
+    </div>
+
+    <div class="right">
+        <h1>About Me Blurb</h1>
+    </div>
+
+    <div class="column">
+        <h1>Recent Tweets</h1>
+    </div>
+
+    </div> -->
+
+    <section class="left">
+        <h1>
+            picture
+        </h1>
+    </section>
+    <section>
+        <h1 class="right">
+            About Me Blurb
+        </h1>
+    </section>
+    <section>
+        <h1 class="column">
+            Recent Tweets
+        </h1>
+    </section>
+  </main>
+  <footer>
+    <h1>
+        Footer
+    </h1>
+  </footer>
+</body>

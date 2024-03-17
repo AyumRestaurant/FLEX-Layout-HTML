@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        #color{
+            color: black;
+        }
+
+        header{
+            border: 2px solid rgb(10, 181, 233);
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(138, 252, 8);
+            margin: 10px;
+
+            text-decoration: white;
+        }
+        h1{
+            text-align: center;
+        }
+        nav{
+            border: 2px solid rgb(10, 181, 233);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+            background-color: rgb(138, 252, 8);
+        }
+        section{
+            border: 2px solid rgb(10, 181, 233);
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: inherit;
+            text-align: center;
+            text-wrap: inherit;
+            flex: 3;
+            margin: 10px;
+            background-color: white;
+        }
+        footer{
+            border: 2px solid rgb(10, 181, 233);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+      
+            background-color: rgb(138, 252, 8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="color">Header</h1>
+    </header>
+    
+    <nav>
+        <h1>Navigation Menu</h1>
+    </nav>
+    
+    <section>
+        <h1>Content</h1>
+    </section>
+    
+    <footer>
+        <h1 id="color">Footer</h1>
+    </footer>
+</body>
+</html>
